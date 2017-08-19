@@ -1,0 +1,79 @@
+<table>
+  <% @edadGuardado.each do |can| %>
+      <tr>
+       
+        <td><%= can %></td>        
+      
+      </tr>
+    <% end %>
+    </table>
+
+<h1>Peso</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Peso</th>
+      <th>Edad</th>      
+      <th>Rasa</th>
+      <th>Color</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pesoGuardado.each do |can| %>
+      <tr>
+        <td><%= can.peso %></td>
+        <td><%= can.edad %></td>        
+        <td><%= can.rasa %></td>
+        <td><%= can.color %></td>
+        <td><%= can.precio %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% canpesomenor = @pesoGuardado.first %>
+<% canpesomayor = @pesoGuardado.last %>
+<h3>el perro con menor peso es: <%= canpesomenor.rasa %> </h3>
+<h3>el perro con mayor peso es: <%= canpesomayor.rasa %> </h3>
+
+<h1>Edad</h1>
+
+<% edadmenor = @edadGuardado.first %>
+<% edadmayor = @edadGuardado.last %>
+<h3>el perro con menor edad es: <%= edadmenor %> </h3>
+<h3>el perro con mayor edad es: <%= edadmayor %> </h3>
+
+<h1>Precio</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Peso</th>
+      <th>Edad</th>      
+      <th>Rasa</th>
+      <th>Color</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @precioGuardado.each do |can| %>
+      <tr>
+        <td><%= can.peso %></td>
+        <td><%= can.edad %></td>       
+        <td><%= can.rasa %></td>
+        <td><%= can.color %></td>
+        <td><%= can.precio %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<% preciomenor = @precioGuardado.first %>
+<% preciomayor = @precioGuardado.last %>
+<h3>el perro con menor costo es: <%= preciomenor.rasa %> </h3>
+<h3>el perro con mayor costo es: <%= preciomayor.rasa %> </h3>

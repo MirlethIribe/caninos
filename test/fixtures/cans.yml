@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  peso: 9.99
+  edad: MyString
+  integer: MyString
+  rasa: MyString
+  color: MyString
+  precio: 1
+
+two:
+  peso: 9.99
+  edad: MyString
+  integer: MyString
+  rasa: MyString
+  color: MyString
+  precio: 1
